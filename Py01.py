@@ -176,13 +176,16 @@
 # print("repr() string: ", repr(mydate))
 
 #---------------------------------------------------------------------
-import datetime
+# import datetime
 
-mydate1 = datetime.datetime.now()
-mydate2 = eval(repr(mydate1))
+# mydate1 = datetime.datetime.now()
+# mydate2 = eval(repr(mydate1))
 
-print("mydate1 repr() string: ", repr(mydate1))
-print("mydate2 repr() string: ", repr(mydate2))
+# print("mydate1 repr() string: ", repr(mydate1))
+# print("mydate2 repr() string: ", repr(mydate2))
 
-print("the values of the objects are equal: ", mydate1==mydate2)
+# print("the values of the objects are equal: ", mydate1==mydate2)
+#---------------------------------------------------------------------
+
+
 

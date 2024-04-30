@@ -99,25 +99,176 @@
 # if years_ago = 7, we would want to return approximately 0.66. This corresponds to a percentage growth of approximately 66%, calculated as (2001078 - 1204334)/1204334.
 # Your coworker sent you a draft of a function, but it doesn't seem to be doing the correct calculation. Can you figure out what has gone wrong and make the needed changes?
 
-num_users = [920344, 1043553, 1204334, 1458996, 1503323, 1593432, 1623463, 1843064, 1930992, 2001078]
+# num_users = [920344, 1043553, 1204334, 1458996, 1503323, 1593432, 1623463, 1843064, 1930992, 2001078]
 
-def percentage_growth(num_users, yrs_ago):
-    growth = (num_users[len(num_users) -1] - num_users[len(num_users) - yrs_ago - 1]) / num_users[len(num_users)-yrs_ago - 1]
-    return growth
+# def percentage_growth(num_users, yrs_ago):
+#     growth = (num_users[len(num_users) -1] - num_users[len(num_users) - yrs_ago - 1]) / num_users[len(num_users)-yrs_ago - 1]
+#     return growth
 
-# Do not change: Variable for calculating some test examples
-num_users_test = [920344, 1043553, 1204334, 1458996, 1503323, 1593432, 1623463, 1843064, 1930992, 2001078]
+# # Do not change: Variable for calculating some test examples
+# num_users_test = [920344, 1043553, 1204334, 1458996, 1503323, 1593432, 1623463, 1843064, 1930992, 2001078]
 
-# Do not change: Should return .036
-print(percentage_growth(num_users_test, 1))
+# # Do not change: Should return .036
+# print(percentage_growth(num_users_test, 1))
 
-# Do not change: Should return 0.66
-print(percentage_growth(num_users_test, 7))
+# # Do not change: Should return 0.66
+# print(percentage_growth(num_users_test, 7))
+# ----------------------------------------------------------
+#-----------------------------------------------------------
 
 
-
+###          ##################
+ ###       ############
+  ###     #########
+    ###  ######
+     #######
 
                                                                         
+#1. 
+# primes = [2, 3, 5, 7, 11, 13, 17, 19, 23]
+# planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+# hands = [
+#     ['J', 'Q', 'K'],
+#     ['2', '2', '2'],
+#     ['6', 'A', 'K'], # (Comma after the last element is optional) #hands = [['J', 'Q', 'K'], ['2', '2', '2'], ['6', 'A', 'K']]
+# ]
+
+# random_things = [46, 'flying mountains', 2.9, True, help]
+# print(random_things)
+# help(list)
+
+#---------------------------------------------------
+def tea_cup_printer():
+    for i in range(9):
+        for j in range(9):
+            if i == 0 or j == 4:
+                print("T", end=" ")
+            elif i > 0 and j == 4 - i:
+                print("T", end=" ")
+            elif i > 0 and j == 4 + i:
+                print("T", end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+
+tea_cup_printer()
+print(tea_cup_printer())
+#------------------------------------------------------
+#------------------------------------------------------
+
+# def cube_printer():
+#     for i in range(3):
+#         for j in range(3):
+#             print("*", end=" ")
+#         print()
+# cube_printer()
+
+#-------------------------------------------------------
+#-------------------------------------------------------
+
+# def print_hollow_square():
+#     for i in range(3):
+#         for j in range(3):
+#             if i == 0 or i == 3 - 1 or j == 0 or j == 3 - 1:
+#                 print("#", end=" ")
+#             else:
+#                 print(" ", end=" ")
+#         print()
+# print_hollow_square()
+# Example: Printing a hollow square with "side length of 5"
+# print_hollow_square(5)
+#--------------------------------------------------------------
+###          ##################
+ ###       ############
+  ###     #########
+    ###  ######
+     #######
+
+
+
+hands = [
+    ['J', 'Q', 'K'],
+    ['2', '2', '2'],
+    ['6', 'A', 'K'], # (Comma after the last element is optional)
+]
+
+# print(hands[2])
+# my_favourite_things = [32, 'raindrops on roses', help]
+# print(my_favourite_things)
+
+# planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+# # print(planets[3:])
+# # print(planets[0:4])
+# # print(planets[2:-3])
+# # print(planets[1:-1])
+# # print(planets[:4])
+# planets[3] = 'Malachandra'
+# # print(planets[3])
+# # print(planets)
+
+# planets[:3] = ['Mur', 'Vee', 'Ur']
+# # print(planets)
+# # print(len(planets))
+
+# print(planets[0:len(planets)])
+
+# sorted(planets)
+# print(planets)
+
+# print(sorted, help)
+# help(sorted)
+
+# planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+# addition_of = [12, 45, 9, 0, 29, 33]
+
+# # y = sorted(planets)
+# p = sum(addition_of)
+# q = max(addition_of)
+# # print(y)
+# print(q)
+
+# x = 12
+# # x is a real number, so its imaginary part is 0.
+# print(x.imag)
+# c = 12 + 3j
+# print(c.imag)
+# y = x.bit_length()
+# z = c.bit_length()
+# print(y)
+# print(z)
+# planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+# planets.remove('Mercury')
+# planets.append('Pluto')
+# print(planets[0:len(planets)], end='\n')
+# print(planets.pop(1))
+# print(planets.index('Pluto'))
+# print("Earth" in planets)s
+# print("Flight" in planets)
+# t = (1, 2, 3)
+# print(t)
+
+# x = 11
+# y = x.as_integer_ratio()
+# print(y[0])
+
+
+# def select_second(L):
+#     if len(L) < 2:
+#         return None
+#     return L[1]
+# print(select_second(['A', 2, True]))
+
+x = [1, 2], [4], [98, -1], ['A', 'B', 'C', 'D']
+print(type(x))
+print(type(x[3]))
+print(x[3])
+print(type(x[2]))
+print(x[2])
+
+
+
+
+
 
 
 
